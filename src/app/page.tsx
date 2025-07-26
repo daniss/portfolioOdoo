@@ -95,24 +95,24 @@ export default function Home() {
                 <span className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">LVMH Experience</span>
               </div>
             </div>
-            <div className="bg-gray-50 p-8 rounded-lg">
+            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-sm">
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Pourquoi me choisir ?</h4>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
-                  <span>Solutions sur mesure adaptées à votre métier</span>
+                  <span className="text-gray-700">Solutions sur mesure adaptées à votre métier</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
-                  <span>Expertise technique approfondie</span>
+                  <span className="text-gray-700">Expertise technique approfondie</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
-                  <span>Approche DevOps pour une mise en production fiable</span>
+                  <span className="text-gray-700">Approche DevOps pour une mise en production fiable</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
-                  <span>Accompagnement personnalisé tout au long du projet</span>
+                  <span className="text-gray-700">Accompagnement personnalisé tout au long du projet</span>
                 </li>
               </ul>
             </div>
@@ -411,11 +411,7 @@ export default function Home() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <span className="text-blue-400 mr-3">📧</span>
-                  <span>danis.cindrak@example.com</span>
-                </div>
-                <div className="flex items-center">
-                  <span className="text-blue-400 mr-3">📱</span>
-                  <span>+33 6 XX XX XX XX</span>
+                  <span>daniscin@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <span className="text-blue-400 mr-3">💼</span>
