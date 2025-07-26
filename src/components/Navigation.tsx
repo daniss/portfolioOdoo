@@ -44,9 +44,10 @@ const Navigation = () => {
           <div className="hidden md:block">
             <a
               href="#contact"
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
+              className="group relative bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-medium hover:shadow-xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:scale-105"
             >
-              Demander un devis
+              <span className="relative z-10">Demander un devis</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
           </div>
 
@@ -54,7 +55,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-600 hover:text-blue-600 p-2"
+              className="text-white/80 hover:text-white p-2"
             >
               <svg
                 className="h-6 w-6"
@@ -85,12 +86,12 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/10 backdrop-blur-xl border-t border-white/20">
               {navItems.map((item) => (
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-gray-600 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                  className="text-white/80 hover:text-white block px-3 py-2 text-base font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -98,7 +99,7 @@ const Navigation = () => {
               ))}
               <a
                 href="#contact"
-                className="bg-blue-600 text-white block px-3 py-2 rounded-lg text-base font-medium hover:bg-blue-700 mt-4"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white block px-3 py-2 rounded-xl text-base font-medium hover:shadow-lg mt-4"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Demander un devis
