@@ -284,58 +284,78 @@ export default function Home() {
             </div>
 
             {/* Projet 3 */}
-            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-purple-600 text-3xl mb-4">🔄</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Automatisation Facturation</h3>
-              <p className="text-gray-600 mb-4">
-                Système automatisé de génération et envoi de factures avec relances clients personnalisées.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Automation</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Email</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Cron</span>
+            <div className="group relative bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-500 transform hover:-translate-y-3">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-violet-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  🔄
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-purple-600 transition-colors">Automatisation Facturation</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Système automatisé de génération et envoi de factures avec relances clients personnalisées.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-gradient-to-r from-purple-100 to-violet-100 text-purple-700 px-3 py-2 rounded-lg text-sm font-medium">Automation</span>
+                  <span className="bg-gradient-to-r from-purple-100 to-violet-100 text-purple-700 px-3 py-2 rounded-lg text-sm font-medium">Email</span>
+                  <span className="bg-gradient-to-r from-purple-100 to-violet-100 text-purple-700 px-3 py-2 rounded-lg text-sm font-medium">Cron</span>
+                </div>
               </div>
             </div>
 
             {/* Projet 4 */}
-            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-red-600 text-3xl mb-4">👥</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Portail Client Avancé</h3>
-              <p className="text-gray-600 mb-4">
-                Interface client personnalisée pour consultation commandes, factures et documents en self-service.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Portal</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">UX</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Self-service</span>
+            <div className="group relative bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:shadow-2xl hover:shadow-red-500/10 transition-all duration-500 transform hover:-translate-y-3">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-pink-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  👥
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-red-600 transition-colors">Portail Client Avancé</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Interface client personnalisée pour consultation commandes, factures et documents en self-service.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-gradient-to-r from-red-100 to-pink-100 text-red-700 px-3 py-2 rounded-lg text-sm font-medium">Portal</span>
+                  <span className="bg-gradient-to-r from-red-100 to-pink-100 text-red-700 px-3 py-2 rounded-lg text-sm font-medium">UX</span>
+                  <span className="bg-gradient-to-r from-red-100 to-pink-100 text-red-700 px-3 py-2 rounded-lg text-sm font-medium">Self-service</span>
+                </div>
               </div>
             </div>
 
             {/* Projet 5 */}
-            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-yellow-600 text-3xl mb-4">📦</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Gestion Stock Multi-Entrepôts</h3>
-              <p className="text-gray-600 mb-4">
-                Solution complète de gestion des stocks avec traçabilité, codes-barres et optimisation des emplacements.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Inventory</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Barcode</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">WMS</span>
+            <div className="group relative bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:shadow-2xl hover:shadow-yellow-500/10 transition-all duration-500 transform hover:-translate-y-3">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/5 to-orange-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  📦
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">Gestion Stock Multi-Entrepôts</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Solution complète de gestion des stocks avec traçabilité, codes-barres et optimisation des emplacements.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-gradient-to-r from-yellow-100 to-orange-100 text-yellow-700 px-3 py-2 rounded-lg text-sm font-medium">Inventory</span>
+                  <span className="bg-gradient-to-r from-yellow-100 to-orange-100 text-yellow-700 px-3 py-2 rounded-lg text-sm font-medium">Barcode</span>
+                  <span className="bg-gradient-to-r from-yellow-100 to-orange-100 text-yellow-700 px-3 py-2 rounded-lg text-sm font-medium">WMS</span>
+                </div>
               </div>
             </div>
 
             {/* Projet 6 */}
-            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-indigo-600 text-3xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">CRM Lead Scoring</h3>
-              <p className="text-gray-600 mb-4">
-                Système intelligent de scoring des prospects avec workflow automatisé et notifications commerciales.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">CRM</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Scoring</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">ML</span>
+            <div className="group relative bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 transform hover:-translate-y-3">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  🎯
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors">CRM Lead Scoring</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Système intelligent de scoring des prospects avec workflow automatisé et notifications commerciales.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 px-3 py-2 rounded-lg text-sm font-medium">CRM</span>
+                  <span className="bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 px-3 py-2 rounded-lg text-sm font-medium">Scoring</span>
+                  <span className="bg-gradient-to-r from-indigo-100 to-purple-100 text-indigo-700 px-3 py-2 rounded-lg text-sm font-medium">ML</span>
+                </div>
               </div>
             </div>
           </div>
