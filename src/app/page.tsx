@@ -1,5 +1,4 @@
 import Navigation from '@/components/Navigation';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -251,8 +250,8 @@ export default function Home() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="text-yellow-400 text-2xl mb-4">⭐⭐⭐⭐⭐</div>
               <p className="text-gray-600 mb-6">
-                "Danis a transformé notre gestion commerciale avec une solution Odoo sur mesure. 
-                L&apos;automatisation nous fait gagner 15h par semaine !"
+                &ldquo;Danis a transformé notre gestion commerciale avec une solution Odoo sur mesure. 
+                L&apos;automatisation nous fait gagner 15h par semaine !&rdquo;
               </p>
               <div className="border-t pt-4">
                 <p className="font-semibold text-gray-900">Marie Dubois</p>
@@ -264,8 +263,8 @@ export default function Home() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="text-yellow-400 text-2xl mb-4">⭐⭐⭐⭐⭐</div>
               <p className="text-gray-600 mb-6">
-                "Approche très professionnelle et technique irréprochable. 
-                Le portail client développé dépasse nos attentes."
+                &ldquo;Approche très professionnelle et technique irréprochable. 
+                Le portail client développé dépasse nos attentes.&rdquo;
               </p>
               <div className="border-t pt-4">
                 <p className="font-semibold text-gray-900">Laurent Martin</p>
@@ -277,8 +276,8 @@ export default function Home() {
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <div className="text-yellow-400 text-2xl mb-4">⭐⭐⭐⭐⭐</div>
               <p className="text-gray-600 mb-6">
-                "Migration complexe réalisée sans accroc. 
-                Danis maîtrise parfaitement l&apos;écosystème Odoo et les bonnes pratiques DevOps."
+                &ldquo;Migration complexe réalisée sans accroc. 
+                Danis maîtrise parfaitement l&apos;écosystème Odoo et les bonnes pratiques DevOps.&rdquo;
               </p>
               <div className="border-t pt-4">
                 <p className="font-semibold text-gray-900">Sophie Leroy</p>
