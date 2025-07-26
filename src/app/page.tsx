@@ -6,35 +6,62 @@ export default function Home() {
       <Navigation />
       
       {/* Hero Section - Accueil */}
-      <section id="accueil" className="pt-16 bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section id="accueil" className="relative pt-16 min-h-screen flex items-center overflow-hidden">
+        {/* Modern gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-pink-600/20"></div>
+        
+        {/* Animated background elements */}
+        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl animate-float" style={{animationDelay: '1.5s'}}></div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">
-                Développeur <span className="text-blue-600">Odoo</span> Freelance
+            <div className="animate-fade-in-up">
+              <div className="mb-6">
+                <span className="inline-block px-4 py-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full text-blue-300 text-sm font-medium border border-blue-500/30 backdrop-blur-sm">
+                  🚀 Développeur Expert
+                </span>
+              </div>
+              <h1 className="text-6xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Développeur <span className="gradient-text">Odoo</span> Freelance
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-gray-300 mb-8 max-w-lg">
                 Expert en solutions ERP personnalisées avec Python, DevOps et automatisation. 
                 Transformez votre entreprise avec des systèmes sur mesure.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
                   href="#contact"
-                  className="bg-blue-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors text-center"
+                  className="group relative bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-medium hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 text-center transform hover:scale-105"
                 >
-                  Démarrer un projet
+                  <span className="relative z-10">Démarrer un projet</span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-700 to-purple-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </a>
                 <a
                   href="#projets"
-                  className="border border-blue-600 text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors text-center"
+                  className="group relative glass text-white px-8 py-4 rounded-xl font-medium hover:bg-white/20 transition-all duration-300 text-center transform hover:scale-105"
                 >
                   Voir mes projets
                 </a>
               </div>
             </div>
-            <div className="relative">
-              <div className="w-80 h-80 mx-auto bg-blue-600 rounded-full flex items-center justify-center">
-                <div className="text-white text-8xl font-bold">DC</div>
+            <div className="relative animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+              <div className="relative">
+                {/* Modern avatar with glassmorphism */}
+                <div className="w-80 h-80 mx-auto relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-400 via-purple-500 to-pink-500 rounded-3xl rotate-6 animate-float"></div>
+                  <div className="relative w-full h-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-3xl flex items-center justify-center glass-dark transform -rotate-6">
+                    <div className="text-white text-6xl font-bold">DC</div>
+                  </div>
+                </div>
+                {/* Floating elements */}
+                <div className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center text-2xl animate-float" style={{animationDelay: '0.5s'}}>
+                  🐍
+                </div>
+                <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-gradient-to-br from-green-400 to-blue-500 rounded-2xl flex items-center justify-center text-2xl animate-float" style={{animationDelay: '1s'}}>
+                  ⚙️
+                </div>
               </div>
             </div>
           </div>
@@ -94,88 +121,165 @@ export default function Home() {
       </section>
 
       {/* Compétences Section */}
-      <section id="competences" className="py-20 bg-gray-50">
+      <section id="competences" className="py-20 bg-gradient-to-br from-gray-50 to-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Mes compétences</h2>
-            <p className="text-xl text-gray-600">Technologies et outils maîtrisés</p>
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-full text-blue-600 text-sm font-medium border border-blue-200 mb-6">
+              💪 Expertise technique
+            </span>
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Mes compétences</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Technologies et outils maîtrisés pour créer des solutions ERP innovantes</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {/* Développement */}
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="text-blue-600 text-4xl mb-4">🐍</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Développement</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Python / Odoo Framework</li>
-                <li>• Modules personnalisés</li>
-                <li>• API REST & XML-RPC</li>
-                <li>• JavaScript / OWL Framework</li>
-                <li>• PostgreSQL</li>
-              </ul>
+            <div className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <div className="absolute inset-0 bg-gradient-to-br from-yellow-400/5 to-orange-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  🐍
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">Développement</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mr-3"></div>
+                    Python / Odoo Framework
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mr-3"></div>
+                    Modules personnalisés
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mr-3"></div>
+                    API REST & XML-RPC
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mr-3"></div>
+                    JavaScript / OWL Framework
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full mr-3"></div>
+                    PostgreSQL
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* ERP/CRM */}
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="text-green-600 text-4xl mb-4">⚙️</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">ERP/CRM</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• Workflows métier</li>
-                <li>• Intégration e-commerce</li>
-                <li>• Gestion stock/facturation</li>
-                <li>• Automatisation processus</li>
-                <li>• Portails clients</li>
-              </ul>
+            <div className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-400/5 to-blue-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-400 to-blue-500 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  ⚙️
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">ERP/CRM</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mr-3"></div>
+                    Workflows métier
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mr-3"></div>
+                    Intégration e-commerce
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mr-3"></div>
+                    Gestion stock/facturation
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mr-3"></div>
+                    Automatisation processus
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-500 rounded-full mr-3"></div>
+                    Portails clients
+                  </li>
+                </ul>
+              </div>
             </div>
 
             {/* DevOps */}
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="text-purple-600 text-4xl mb-4">🚀</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">DevOps</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>• GitHub Actions CI/CD</li>
-                <li>• Docker / Containerisation</li>
-                <li>• Déploiement automatisé</li>
-                <li>• Monitoring & logs</li>
-                <li>• Infrastructure cloud</li>
-              </ul>
+            <div className="group relative bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-400/5 to-pink-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  🚀
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-6">DevOps</h3>
+                <ul className="space-y-3">
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mr-3"></div>
+                    GitHub Actions CI/CD
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mr-3"></div>
+                    Docker / Containerisation
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mr-3"></div>
+                    Déploiement automatisé
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mr-3"></div>
+                    Monitoring & logs
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full mr-3"></div>
+                    Infrastructure cloud
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Projets Section */}
-      <section id="projets" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="projets" className="py-20 bg-white relative">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/30 via-purple-50/30 to-pink-50/30"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Projets réalisés</h2>
-            <p className="text-xl text-gray-600">Solutions Odoo personnalisées pour différents secteurs</p>
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-full text-blue-600 text-sm font-medium border border-blue-200 mb-6">
+              🚀 Réalisations
+            </span>
+            <h2 className="text-5xl font-bold text-gray-900 mb-4">Projets réalisés</h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">Solutions Odoo personnalisées et innovantes pour différents secteurs d&apos;activité</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Projet 1 */}
-            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-blue-600 text-3xl mb-4">🛍️</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">E-commerce B2B Intégré</h3>
-              <p className="text-gray-600 mb-4">
-                Synchronisation automatique entre boutique en ligne et ERP Odoo avec gestion des stocks en temps réel.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">API</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Stock</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Webhook</span>
+            <div className="group relative bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 transform hover:-translate-y-3">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  🛍️
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">E-commerce B2B Intégré</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Synchronisation automatique entre boutique en ligne et ERP Odoo avec gestion des stocks en temps réel.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-700 px-3 py-2 rounded-lg text-sm font-medium">API</span>
+                  <span className="bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-700 px-3 py-2 rounded-lg text-sm font-medium">Stock</span>
+                  <span className="bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-700 px-3 py-2 rounded-lg text-sm font-medium">Webhook</span>
+                </div>
               </div>
             </div>
 
             {/* Projet 2 */}
-            <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <div className="text-green-600 text-3xl mb-4">📊</div>
-              <h3 className="text-xl font-bold text-gray-900 mb-3">Dashboard Analytique RH</h3>
-              <p className="text-gray-600 mb-4">
-                Tableau de bord personnalisé pour le suivi des KPI RH avec indicateurs de performance en temps réel.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">BI</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">RH</span>
-                <span className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-sm">Reporting</span>
+            <div className="group relative bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl p-8 hover:shadow-2xl hover:shadow-green-500/10 transition-all duration-500 transform hover:-translate-y-3">
+              <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-emerald-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                  📊
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">Dashboard Analytique RH</h3>
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Tableau de bord personnalisé pour le suivi des KPI RH avec indicateurs de performance en temps réel.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 px-3 py-2 rounded-lg text-sm font-medium">BI</span>
+                  <span className="bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 px-3 py-2 rounded-lg text-sm font-medium">RH</span>
+                  <span className="bg-gradient-to-r from-green-100 to-emerald-100 text-green-700 px-3 py-2 rounded-lg text-sm font-medium">Reporting</span>
+                </div>
               </div>
             </div>
 

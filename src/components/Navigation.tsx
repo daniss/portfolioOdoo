@@ -15,12 +15,12 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+    <nav className="fixed top-0 w-full bg-white/10 backdrop-blur-xl z-50 border-b border-white/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="#accueil" className="text-2xl font-bold text-blue-600">
+            <a href="#accueil" className="text-2xl font-bold gradient-text">
               Danis Cindrak
             </a>
           </div>
@@ -32,7 +32,7 @@ const Navigation = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="text-gray-600 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-white/80 hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   {item.label}
                 </a>
